@@ -1,10 +1,8 @@
 <?php
- 
-$host  = "";
-$user  = "";
-$pass  = "";
-$banco = "";
-$link =  PDO ($host,$user,$pass,$banco);
-IF (PDO($link)){
-    ECHO "ok";
-}
+ //Conexão Mysql
+define ('HOSTNAME', 'localhost');
+define ('USERNAME', 'root');
+define ('PASSWORD', null);
+define ('DATABASE','producao');
+define ('CHARSET' ,'utf8');
+?>
