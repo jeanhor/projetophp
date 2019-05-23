@@ -23,10 +23,12 @@ include_once ("conexao.php");
         
         <?php
         $testar = DBConnect();
-            
-            
-        
-                      ?>
+            if (!$testar)
+                {die("Connection failed: " . mysqli_connect_error());}
+                 echo "Connected successfully";
+        $sqlinsert = "INSERT INTO user(usuario,senha)VALUES (, 'teste') ";
+                 
+        ?>
         
     </body>
     
